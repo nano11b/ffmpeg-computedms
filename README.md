@@ -34,6 +34,7 @@ This allows multiple compute nodes to work in parallel, dramatically increasing 
 
 ## Architecture
 
+```
 +-------------+
 | Dashboard UI |
 +------+------+
@@ -52,6 +53,7 @@ v
 +-----------------------+
 | Worker Nodes (FFmpeg) |
 +-----------------------+
+```
 
 Workers can be scaled horizontally to handle increasing workloads.
 
@@ -89,7 +91,6 @@ git clone https://github.com/nano11b/ffmpeg-computedms.git
 cd ffmpeg-computedms
 
 docker compose up --build
-docker compose up --scale worker=5
 ```
 
 Find the interface at http://localhost:8000
